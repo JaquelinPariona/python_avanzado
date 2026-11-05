@@ -54,3 +54,47 @@ login(password="12345678",usuario="mia")
 # Esta funcion es una funcion nominal por que para pasar los valores tengo que indicar la variable a la que se le va asociar en el parametro de la funcion.
 ```
 
+
+## Funciones anonimas 
+Las funciones anonimas en python son llamadas `lambda` estas funciones tiene las siguientes propiedades: 
+1. Se escribe en una unica sentencia `(linea)`.
+2. No tiene nombre `(anonima)`.
+3. Su cuerpo conlleva un `return` implicito.
+4. Puede recibir cualquier numero de parametro.
+
+La estructura para definir una funcion landa `lambda` es las siguientes
+1. Escribir la palabra reservada `lambda`.
+2. Especificar la cantidad de parametros.
+3. Indicar los datos de retorno.
+```python 
+lambda a,b: a+b
+
+```
+> [!TIP] Puesto que esta funcion es anonima para ejecutarla debemos almacenar la funcion en la variable 
+```python 
+suma=lambda a,b: a+b
+suma(3,6)
+```
+# Documentacion
+Python nos permite documentar la funcion con el objetivo de explicar mejor determinadas zonas de nuestro codigo, para eso usamos una cade de texto despues de la definicion de una funcion, a esta cade de texto se le conoce como `docstring` y esta delimitado por triples `""" aqui el texto """`.
+```python
+def suma(a,b)
+    """
+    funcion para realizar la suma de dos numeros
+    """
+## Los docstring tambien nos permite explicar los poarametros que recibe y los datos de salida.
+def resta(a,b)
+    """
+    a=a un numero entero.
+    b= un numero entero.
+    en ambos casos a,b no deben recibir valores menores 0.
+    restornara un dato entero <int> positivo.
+    """
+    return a-b
+```
+> [!WARNING] En el proceso de documentacion tener encuenta de incluir a lo menos lo siguiente: 
+1. Breve explicacin sobre que hace la funcion.
+2. Especificar y caracteristicas de los parametros incluyendo sus tipos.
+3. Restricciones de la funcion.
+4. El valor que retorna y sus caracteristicas.
+
