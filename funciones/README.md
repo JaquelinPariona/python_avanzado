@@ -98,3 +98,28 @@ def resta(a,b)
 3. Restricciones de la funcion.
 4. El valor que retorna y sus caracteristicas.
 
+## Type-hints (Anotaciones de tipo)
+Nos permite indicar que tipo de datos tendra una variable, parametros y el valor de retorno de una funcion.
+Para utilizarlos debemos indicar el tipo de dato despue del reparador `:` , en el caso del valor de retorno usaremos `->` luego el tipo de dato y finalmente el separador `:` que indica el inicio del bloque de codigo de la funcion.
+Las `anotaciones de tipo` son una herramienta que nos permite complementar la documentacion de nuestro codigo.
+**Tenemos lo siguiente**
+- **Simples**
+    - int -> Numeros enteros.
+    - float -> Numeros decimales.
+    - bool -> Datos boleanos (verdad o falso).
+    - str -> Datos de tipo texto o cadena.
+    - list -> Lista `[]`.
+    - tuple -> Tuplas `()`.
+    - dict -> Diccionarios `{}`
+- **Conpuestos**
+Existen caso en los que necesitamos mas expresividad en la *anotacion de tipos* ¿Que ocurre si queremos indicar una *lista de cadenas* o un *conjunto de enteros*?.
+    - list[str] -> lista de cadenas de texto.
+    - list[int] -> lista de numeros enteros.
+    - dict{str,float} -> diccionariodonde las claves son cadenas de texto y los valores son flotantes/decimales.
+- **Multiples** 
+En el caso que queremos indicar que un determinado parametro puedeser de `tipo o de otro` tenemos que especificarlo usando el operador `|`.
+- tuple|dict -> puede ser dato de tipo tupla o diccionario .
+- list[str|int] -> lista cuyos elementos puede ser cadena de texto o ineteros.
+- dict[str|int,float|int] -> 
+
+
