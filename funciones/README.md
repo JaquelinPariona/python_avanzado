@@ -123,3 +123,8 @@ En el caso que queremos indicar que un determinado parametro puedeser de `tipo o
 - dict[str|int,float|int] -> 
 
 
+## listas por comprehension
+definicion y ejemplo
+
+## diccionarios de comprehension
+
