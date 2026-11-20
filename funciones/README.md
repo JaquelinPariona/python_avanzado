@@ -124,7 +124,7 @@ En el caso que queremos indicar que un determinado parametro puedeser de `tipo o
 
 
 ## listas por comprehension
-definicion y ejemplo
+definicion y ejemplo concepto
 
 ## diccionarios de comprehension
 
